@@ -60,10 +60,6 @@ if($_SERVER["REQUEST_METHOD"] == "GET") {
 	
 	<body>
 
-    <video id="video-background" autoplay muted loop>
-    <source src="campfire.mp4" type="video/mp4">
-    </video>
-
 		<div class="container">
 
 			<?php include("header.html");?>

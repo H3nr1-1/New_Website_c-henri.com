@@ -1,6 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-
-/* Hex codes: ethereal ivory #E4E4DE, sophisticated sage #C4C5BA, timeless noir #1B1B1B, muted moss #595f39 */
 
 html {
     box-sizing : border-box;
@@ -22,10 +21,12 @@ html {
     --card-before: hsl(334,44%,54%);
     --card-after: hsl(216, 88%, 35%);
     --transition-time: 0.5s;
+    --primary-font: "Montserrat Alternates", sans-serif;
 }
 
 body{
     background: var(--color-primary);
+    margin: 0;
 }
 
 .wrapper{
@@ -40,8 +41,10 @@ body{
 
 header{
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    padding: 30px;
+    border-bottom: 3px solid var(--color-light-gray);
+    background: url(images/header-sunburst.webp) no-repeat center center;
+    background-size: cover;
 }
 
 header img{
@@ -54,9 +57,11 @@ header img{
 /* Start Navigation */
 .nav-main {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 10;
+    left: 10;
     line-height: 0;
+    z-index: 9;
+    overflow: none;
 }
 
 .nav-main-menu-toggle {
@@ -110,7 +115,7 @@ header img{
     height: 100vh;
     background: hsla(204, 86%, 53%, 0.7);
     backdrop-filter: blur(15px);
-    margin: 0;
+    left: -30px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -127,37 +132,40 @@ header img{
 }
 
 #nav-main-menu li a {
+    font-family: var(--primary-font);
+    font-weight: 500;
     color: inherit;
     display: flex;
     line-height: 3;
     padding: 0 2em;
     transition: all .25s ease-in-out;
     text-decoration: none;
-    font-size: 2.5em;
+    font-size: 2.25em;
 }
 
 .active{
-    text-decoration: underline;
-    color: var(--color-cta); 
-    text-shadow: 2px 2px var(--color-gray-dark);
+    text-decoration: underline var(--card-before);
 }
 
 #nav-main-menu li a:hover,
 #nav-main-menu li a:focus {
     text-decoration: underline;
     color: var(--color-cta);
-    text-shadow: 2px 2px var(--color-gray-dark);
+    text-shadow: 1px 1px var(--color-gray-dark);
     cursor: grabbing;
 }
 /* End Navigation */
 
 .projects{
     text-align: center;
-    font-size: 3em;
+    font-size: 2em;
+    font-weight: 500;
     color: var(--color-white);
     -webkit-text-stroke: 2px var(--color-black);
     border-bottom: 3px outset var(--color-black);
     margin-top: 5rem;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 /* Start of the cards to showcase Projects */
@@ -185,7 +193,7 @@ header img{
     align-items: flex-end;
     background-size: cover;
     background-position: center;
-    box-shadow: 0 0 5em -1em var(--color-gray-dark);
+    box-shadow: 0 0 2em var(--color-gray-dark);
     transition: all, var(--transition-time);
     position: relative;
     overflow: hidden;
@@ -248,10 +256,10 @@ header img{
   }
   
   .card:after {
-    background: var(--card-after);
+    background: url(images/click-me.webp);
     width: 200%;
     height: 200%;
-  }
+  } 
   
   .card:hover {
     color: var(--color);
@@ -288,11 +296,21 @@ header img{
 
 @media screen and (min-width:768px){
 
+    header{
+      padding: 30px;
+      border-bottom: 2px solid var(--color-gray-light);
+    }
+
     header img{
         margin: 25px;
+        margin-top: 30px;
         width: 55%;
         height: 55%;
         rotate: -10deg;
+    }
+
+    .projects{
+      font-size: 3em;
     }
 
      /*  ***Media Query for NAV***  */
@@ -322,6 +340,8 @@ header img{
     #nav-main-menu li a{
         margin-left: 75px;
         margin-top: 10px;
+        font-size: 2.5em;
+        font-weight: 900;
     }
     
     .nav-main-menu-toggle {
@@ -341,9 +361,11 @@ header img{
     .cards-wrapper {
       grid-template-columns: 1fr;
     }
+
     .info {
       justify-content: center;
     }
+
     .card-grid-space .num {
       margin-left: 0;
       text-align: center;

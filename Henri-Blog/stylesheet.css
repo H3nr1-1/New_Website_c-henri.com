@@ -3,10 +3,12 @@
 
 
 body {
+    background: antiquewhite;
     margin: 0;
     overflow: hidden;
     overflow-y:auto;
-    color:white;
+    color: black;
+    font-weight:700;
     position: relative;
 }
 
@@ -28,7 +30,8 @@ body {
 header{
     font-family: "Barlow", sans-serif;
     text-align: center;
-    text-shadow: 3px 3px firebrick;
+    color: white;
+    text-shadow: 0 0 10px firebrick;
     padding: 5%;
 }
 
@@ -99,6 +102,8 @@ h3{
 footer{
     font-family: "Barlow", sans-serif;
     font-size: smaller;
+    color: black;
+    text-shadow: 1px 1px white;
     margin-top: 5%;
     padding:3%;
 }
