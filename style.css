@@ -27,6 +27,7 @@ html {
     --card-after: hsl(216, 88%, 35%);
     --transition-time: 0.5s;
     --primary-font: "Montserrat Alternates", sans-serif;
+    --form-font: "Nunito", sans-serif; 
 }
 
 body{
@@ -301,7 +302,7 @@ header img{
 
 /* Start of Contact Me Form */
 .contact_us_8 * {
-  font-family: Nunito, sans-serif;
+  font-family: var(--form-font);
 }
 
 .contact_us_8 .text-blk {
@@ -351,7 +352,7 @@ header img{
   padding-right: 30px;
   padding-bottom: 10px;
   padding-left: 30px;
-  background-color: #03a9f4;
+  background-color: var(--color-cta);
   position: absolute;
   height: 300px;
 }
@@ -367,14 +368,14 @@ header img{
 }
 
 .contact_us_8 .container-block.form-wrapper {
-  background-color: white;
+  background-color: var(--color-white);
   max-width: 610px;
   text-align: center;
   padding-top: 50px;
   padding-right: 40px;
   padding-bottom: 50px;
   padding-left: 40px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 4px 20px 7px;
+  box-shadow: var(--color-gray) 0px 4px 20px 7px;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -398,7 +399,7 @@ header img{
 }
 
 .contact_us_8 .text-blk.contactus-subhead {
-  color: black;
+  color: var(--color-black);
   margin-top: 0px;
   margin-right: 0px;
   margin-bottom: 30px;
@@ -429,10 +430,10 @@ header img{
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  border-top-color: #eeeeee;
-  border-right-color: #eeeeee;
-  border-bottom-color: #eeeeee;
-  border-left-color: #eeeeee;
+  border-top-color: var(--color-gray-dark);
+  border-right-color: var(--color-gray-dark);
+  border-bottom-color: var(--color-gray-dark);
+  border-left-color: var(--color-gray-dark);
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -460,10 +461,10 @@ header img{
   border-right-style: solid;
   border-bottom-style: solid;
   border-left-style: solid;
-  border-top-color: #eeeeee;
-  border-right-color: #eeeeee;
-  border-bottom-color: #eeeeee;
-  border-left-color: #eeeeee;
+  border-top-color: var(--color-gray-dark);
+  border-right-color: var(--color-gray-dark);
+  border-bottom-color: var(--color-gray-dark);
+  border-left-color: var(--color-gray-dark);
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -474,11 +475,11 @@ header img{
 
 .contact_us_8 .submit-btn {
   width: 100%;
-  background-color: #03a9f4;
+  background-color: var(--color-cta);
   height: 50px;
   font-size: 18px;
   font-weight: 700;
-  color: white;
+  color: var(--color-white);
   border-top-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 0px;
@@ -487,10 +488,10 @@ header img{
   border-right-style: outset;
   border-bottom-style: outset;
   border-left-style: outset;
-  border-top-color: #767676;
-  border-right-color: #767676;
-  border-bottom-color: #767676;
-  border-left-color: #767676;
+  border-top-color: var(--color-gray-dark);
+  border-right-color: var(--color-gray-dark);
+  border-bottom-color: var(--color-gray-dark);
+  border-left-color: var(--color-gray-dark);
   border-image-source: initial;
   border-image-slice: initial;
   border-image-width: initial;
@@ -521,7 +522,7 @@ header img{
   top: 0px;
   height: 100%;
   right: 0;
-  background-color: rgba(151, 220, 250, 0.44);
+  background-color: rgba(30, 153, 229, 0.299);
   max-width: 363px;
   width: 100%;
   display: flex;
@@ -584,6 +585,23 @@ header img{
   width: 100%;
 }
 /* End of Contact Me Form */
+
+footer{
+  text-align: right;
+  margin-right: 15%;
+  padding: 3em;
+}
+
+.email:hover{
+  cursor: grabbing;
+  color: var(--color-cta);
+  text-decoration: underline;
+  text-shadow: 0 0 10px var(--card-before);
+}
+
+h4{
+  font-size: 1.2em;
+}
 
 @media screen and (min-width:768px){
 
