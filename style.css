@@ -4,9 +4,10 @@
 
 
 html {
-    box-sizing : border-box;
-    scroll-behavior : smooth;
+  box-sizing : border-box;
+  scroll-behavior : smooth;
 }
+
 *, *::before, *::after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -150,7 +151,7 @@ header img{
 }
 
 .active{
-    text-decoration: underline var(--card-before);
+  text-decoration: underline var(--card-before);
 }
 
 #nav-main-menu li a:hover,
@@ -179,7 +180,7 @@ header img{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 1rem;
     padding: 1rem;
     margin: 0 auto;
