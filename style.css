@@ -32,6 +32,42 @@ html {
     --form-font: "Nunito", sans-serif; 
 }
 
+/* Animation for the header when the page loads */
+@keyframes bounceInDown {
+  from,
+  65%,
+  75%,
+  80%,
+  to {
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+      opacity: 0;
+      transform: translate3d(0, -3000px, 0) scale(0);
+  }
+
+  65% {
+      opacity: 0.5;
+      transform: translate3d(0, 0px, 0) scale(1.05);
+  }
+
+  75% {
+      opacity: 0.7;
+      transform: translate3d(0, -10px, 0) scale(0.98);
+  }
+
+  80% {
+      opacity: 0.85;
+      transform: translate3d(0, 0, 0) scale(1.02);
+  }
+
+  to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
 body{
     background: var(--color-primary);
     margin: 0;
@@ -59,6 +95,10 @@ header img{
     margin: 0 auto;
     width: 90%;
     height: 90%;
+    animation-name: bounceInDown;
+    animation-fill-mode: forwards;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
 }
 
 .logo{
@@ -178,6 +218,7 @@ header img{
   margin: auto;
   padding: 2rem;
   background: url(images/welcome-background.webp) no-repeat center center;
+  background-size: cover;
   box-shadow: 0 3px 10px var(--color-black);
 }
 
@@ -231,7 +272,7 @@ header img{
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
     padding: 1rem;
     margin: 0 auto;
