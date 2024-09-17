@@ -73,6 +73,11 @@ body{
     margin: 0;
 }
 
+body:has([aria-expanded='true']){
+  height: 100%;
+  overflow: hidden;
+}
+
 .wrapper{
     margin: 0 auto;
     display: flex;   
