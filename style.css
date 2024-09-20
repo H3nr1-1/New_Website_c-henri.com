@@ -117,7 +117,6 @@ header img{
     left: 10;
     line-height: 0;
     z-index: 9;
-    overflow: none;
 }
 
 .nav-main-menu-toggle {
@@ -594,6 +593,7 @@ header img{
   border-top-right-radius: 64px;
   border-bottom-right-radius: 64px;
   border-bottom-left-radius: 64px;
+  cursor: grab;
 }
 
 .contact_us_8 .form-box {
@@ -723,6 +723,10 @@ header img{
   font-weight:400;
 	text-decoration: none;
 	color:  inherit;
+}
+
+.footer-distributed .footer-links a:hover{
+  text-decoration: underline var(--card-before);
 }
 
 .footer-distributed .footer-company-name{
