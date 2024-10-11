@@ -45,7 +45,7 @@
 	
 	<body>
 
-    <video id="video-background" autoplay muted loop>
+    <video id="video-background" autoplay="autoplay" loop="loop" muted playsinline preload="auto">>
         <source src="campfire.mp4" type="video/mp4">
     </video>
 
