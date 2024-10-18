@@ -22,7 +22,7 @@ html {
     --color-white : hsl(0 0% 100%);
     --color-gray-light : hsl(0 0% 96%);
     --color-gray : hsl(0 0% 83%);
-    --color-gray-dark : hsl(0 0% 40%);
+    --color-gray-dark: hsl(0 0% 40%);
     --color-gray-darker: hsl(0, 6%, 15%);
     --color-black : hsl(0 0% 0%);
     --card-before: hsl(334,44%,54%);
@@ -148,7 +148,7 @@ header img{
 #nav-main-menu li a {
     font-family: var(--primary-font);
     font-weight: 500;
-    color: inherit;
+    color: var(--color-black);
     display: flex;
     line-height: 3;
     padding: 0 2em;
@@ -165,10 +165,10 @@ header img{
 
 #nav-main-menu li a:hover,
 #nav-main-menu li a:focus {
-    text-decoration: underline;
-    color: var(--color-cta);
-    text-shadow: 1px 1px var(--color-gray-dark);
-    cursor: grabbing;
+    text-decoration: underline var(--card-before);
+    color: var(--color-gray-dark);
+    text-shadow: 1px 1px var(--color-gray-light);
+    cursor: grab;
 }
 /* End Navigation */
 
@@ -713,9 +713,23 @@ ul li {
 }
 /* End of Contact Me Form */
 
+/* 404 Error Page */
+.error-body{
+  background: var(--color-gray-dark);
+}
+
+.error {
+  width: 100%;
+  margin: 0;
+}
+
+.cta-error {
+  margin-bottom: 1em;
+}
+
 /* Start of footer Element */
 .footer-distributed{
-	background: #666;
+	background: var(--color-gray-dark);
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 	box-sizing: border-box;
 	width: 100%;
@@ -959,6 +973,7 @@ ul li {
   .projects{
     font-size: 3em;
   }
+
 }
 
 /* End of Footer */
@@ -1008,8 +1023,8 @@ ul li {
 
     #nav-main-menu li a{
         margin-left: 75px;
-        margin-top: 10px;
-        font-size: 2.25em;
+        margin-top: 50px;
+        font-size: 3em;
         font-weight: 900;
     }
     

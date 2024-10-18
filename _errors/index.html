@@ -13,20 +13,20 @@
           <meta property="og:title" content="Home - © Chris Henrickson Front End Web Developer">
           <meta property="og:url" content="https://www.c-henri.com/index">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="/style.css" type="text/css">
         <!-- Styles for the logo's in the footer -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script defer src="script.js"></script>
+        <script defer src="/script.js"></script>
         <title>Chris Henrickson - Frontend Developer</title>
-        <link rel="icon" href="Images/my-logo.webp" type="image/x-icon">
+        <link rel="icon" href="/images/my-logo.webp" type="image/x-icon">
     </head>	
 
         <body>
 
-            <div class="wrapper">
+            <div class="wrapper error-body">
 
                 <header>
-                    <img class="logo" src="images/logo-header.webp" alt="My logo - Chris Henrickson - Web Developer">
+                    <img class="logo" src="/images/logo-header.webp" alt="My logo - Chris Henrickson - Web Developer">
                     <nav class="nav-main">
                         <button class="nav-main-menu-toggle" aria-label="Open Menu" aria-controls="nav-main-menu" aria-expanded="false">
                             <svg viewBox="0 0 48 48" width="48" height="48">
@@ -36,22 +36,29 @@
                             </svg>
                         </button>
                         <ul id="nav-main-menu" hidden>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Me</a></li>
-                            <li><a href="contact.html">Contact Me</a></li>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/contact.html">Contact Me</a></li>
                         </ul>
                     </nav>
                 </header>
                 
-                
+                <section>
+                  <div class="grid-12">
+                    <div class="grid-12-span-2-11">
+                      <img class="error" src="_errors/images/error-image.webp">
+                    </div>
+                  </div>
+                    <div class="cta cta-error">
+                      <a href="/index.html" class="btn">Return Home</a>
+                    </div>
+                </section>                
 
                 <footer class="footer-distributed">
                   <div class="footer-left">            
-                    <img src="images/logo-footer.webp" alt="My personal brand logo">            
+                    <img src="/images/logo-footer.webp" alt="My personal brand logo">            
                     <p class="footer-links">
-                      <a href="index.html" class="link-1">Home</a>                      
-                      <a href="about.html">About Me</a>                    
-                      <a href="contact.html">Contact Me</a>
+                      <a href="/index.html" class="link-1">Home</a>                      
+                      <a href="/contact.html">Contact Me</a>
                     </p>            
                     <p class="footer-company-name">Chris Henrickson Web Dev © 2023</p>
                   </div>            
