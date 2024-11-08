@@ -1,0 +1,55 @@
+:root{
+    --color-primary: rgb(168, 188, 248);
+    --color-alternate: rgb(245, 233, 194);
+    --color-white: rgb(255, 250, 250);
+    --color-black: rgb(0, 0, 0);
+}
+
+#burger-haven{
+    border-radius: 2em;
+    box-shadow: 0 0 10px;
+}
+
+.nav-brand {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+nav {
+    box-shadow: 0 5px 10px;
+}
+
+nav a {
+    margin-left: 2em;
+}
+
+nav a:hover {
+    text-decoration: underline 2px red;
+}
+
+.carousel .w-100 {
+    max-height: 600px;
+}
+
+.bg-body {
+    background: var(--color-alternate) !important;
+    box-shadow: 0 0 10px;
+}
+
+.bg-dark {
+    background: var(--color-alternate) !important;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 5em;
+}
+
+.wrapper form {
+    margin: 0;
+    border: 3px solid;
+    border-radius: 1em;
+    box-shadow: 0 0 10px;
+    padding: 1em;
+}
