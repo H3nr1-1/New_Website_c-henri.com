@@ -45,6 +45,8 @@ nav a:hover {
 
 header {
     margin-top: 5em;
+    background: url(images/header-background.webp) no-repeat;
+    background-size: cover;
 }
 
 .carousel .w-100 {
@@ -81,8 +83,9 @@ header {
 }
 
 .card-body li {
-    border-top: 1px solid;
+    margin-top: 10px;
     padding: 1em;
+    border-top: 1px solid;
 }
 
 .wrapper form {
