@@ -187,8 +187,9 @@ header img{
   align-items: center;
   text-align: center;
   padding: 40px 20px;
-  background-color: var(--color-gray-light);
+  background: url(images/intro_background.webp) no-repeat;
   background-size: cover;
+  border-top: 3em solid var(--color-primary);
 }
 
 .profile-img {
@@ -983,6 +984,7 @@ ul li {
     header{
       padding: 30px;
       border-bottom: 2px solid var(--color-gray-light);
+      border: none;
     }
 
     header img{
