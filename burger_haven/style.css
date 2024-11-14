@@ -17,11 +17,6 @@ html {
     box-sizing : border-box;
 }
 
-#burger-haven{
-    border-radius: 2em;
-    box-shadow: 0 0 10px;
-}
-
 .nav-brand {
     max-width: 50px;
     max-height: 50px;
@@ -39,7 +34,7 @@ nav a {
     border-bottom: 3px solid var(--color-primary);
 }
 
-nav a:hover {
+.main-nav-link:hover {
     border-bottom: 3px solid var(--color-cta);
 }
 
@@ -49,13 +44,28 @@ header {
     background-size: cover;
 }
 
+header h1 {
+    text-align: center;
+}
+
 .carousel .w-100 {
     max-height: 600px;
 }
 
 .bg-body {
-    background: var(--color-alternate) !important;
-    box-shadow: 0 0 10px;
+    background: url(images/burger-wrapper.webp) no-repeat !important;
+    background-size: cover !important;
+    box-shadow: 0 0 20px inset;
+    color: var(--color-black) !important;
+}
+
+.view-menu {
+    border: 1px solid;
+    padding: 1em;
+    background: var(--color-alternate);
+    border-radius: 1em;
+    margin-bottom: 2em;
+    opacity: .8;
 }
 
 .bg-dark {
